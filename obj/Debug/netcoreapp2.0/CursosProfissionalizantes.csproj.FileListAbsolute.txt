@@ -1,0 +1,10 @@
+C:\Users\FIC.INFO\Desktop\CursosProfissionalizantes\bin\Debug\netcoreapp2.0\CursosProfissionalizantes.deps.json
+C:\Users\FIC.INFO\Desktop\CursosProfissionalizantes\bin\Debug\netcoreapp2.0\CursosProfissionalizantes.runtimeconfig.json
+C:\Users\FIC.INFO\Desktop\CursosProfissionalizantes\bin\Debug\netcoreapp2.0\CursosProfissionalizantes.runtimeconfig.dev.json
+C:\Users\FIC.INFO\Desktop\CursosProfissionalizantes\bin\Debug\netcoreapp2.0\CursosProfissionalizantes.dll
+C:\Users\FIC.INFO\Desktop\CursosProfissionalizantes\bin\Debug\netcoreapp2.0\CursosProfissionalizantes.pdb
+C:\Users\FIC.INFO\Desktop\CursosProfissionalizantes\obj\Debug\netcoreapp2.0\CursosProfissionalizantes.csproj.CoreCompileInputs.cache
+C:\Users\FIC.INFO\Desktop\CursosProfissionalizantes\obj\Debug\netcoreapp2.0\CursosProfissionalizantes.AssemblyInfoInputs.cache
+C:\Users\FIC.INFO\Desktop\CursosProfissionalizantes\obj\Debug\netcoreapp2.0\CursosProfissionalizantes.AssemblyInfo.cs
+C:\Users\FIC.INFO\Desktop\CursosProfissionalizantes\obj\Debug\netcoreapp2.0\CursosProfissionalizantes.dll
+C:\Users\FIC.INFO\Desktop\CursosProfissionalizantes\obj\Debug\netcoreapp2.0\CursosProfissionalizantes.pdb
