@@ -11,9 +11,11 @@ namespace CursosProfissionalizantes.Models
         public int IdCursoGeral { get; set; }
 
         [Required]
-        public int IdCursoEspecifico { get; set; }
-
-        [Required]
+        [StringLength(100, MinimumLength=3)]
         public string NomeCursoGeral { get; set; }
+
+        public CursoEspecifico CursoEspecifico {get; set;}
+
+
     }
 }
