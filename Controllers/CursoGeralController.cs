@@ -17,6 +17,10 @@ namespace CadastroCursos.Controllers
             this.contexto = contexto;
         }
         
+        /// <summary>
+        /// teste   
+        /// </summary>
+        /// <returns>teste</returns>
         [HttpGet]
         public IEnumerable<CursoGeral> Listar(){
             return contexto.CursoGeral.ToList();           

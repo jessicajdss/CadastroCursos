@@ -18,3 +18,4 @@ C:\Users\fic.INFO\Desktop\CadastroCursos\bin\Debug\netcoreapp2.0\CursosProfissio
 C:\Users\fic.INFO\Desktop\CadastroCursos\bin\Debug\netcoreapp2.0\CursosProfissionalizantes.runtimeconfig.dev.json
 C:\Users\fic.INFO\Desktop\CadastroCursos\bin\Debug\netcoreapp2.0\CursosProfissionalizantes.dll
 C:\Users\fic.INFO\Desktop\CadastroCursos\bin\Debug\netcoreapp2.0\CursosProfissionalizantes.pdb
+C:\Users\fic.INFO\Desktop\CadastroCursos\bin\Debug\netcoreapp2.0\CursosOnline.xml

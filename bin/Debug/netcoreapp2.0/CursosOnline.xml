@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CursosProfissionalizantes</name>
+    </assembly>
+    <members>
+        <member name="M:CadastroCursos.Controllers.CursoGeralController.Listar">
+            <summary>
+            teste   
+            </summary>
+            <returns>teste</returns>
+        </member>
+    </members>
+</doc>
