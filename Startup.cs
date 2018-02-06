@@ -26,6 +26,7 @@ namespace CursosProfissionalizantes {
             services.AddMvc ();
 
             services.AddSwaggerGen (c => {
+<<<<<<< HEAD
                 c.SwaggerDoc ("v1", new Info {
                     Version = "v1",
                         Title = "Api Cursos Online",
@@ -39,6 +40,21 @@ namespace CursosProfissionalizantes {
                  var caminhoBase = AppContext.BaseDirectory;
                  var caminhoXml = Path.Combine (caminhoBase, "CursosOnline.xml");
                  c.IncludeXmlComments (caminhoXml);
+=======
+                c.SwaggerDoc ("V1", new Info {
+                    Version = "V1",
+                        Title = "Cursos Online",
+                        Description = "Documentação da Api Cursos Online",
+                        TermsOfService = "none",
+                        Contact = new Contact {
+                            Name = "Jéssica Souza",
+                                Email = "jessica.jdss@gmail.com",
+                        }
+                });
+                var basePath = AppContext.BaseDirectory;
+                var xmlPath = Path.Combine (basePath, "CursosOnline.xml");
+                c.IncludeXmlComments (xmlPath);
+>>>>>>> 2826ba62a3c08709add3ca398bc2542103f44872
             });
         }
 
@@ -47,7 +63,10 @@ namespace CursosProfissionalizantes {
             if (env.IsDevelopment ()) {
                 app.UseDeveloperExceptionPage ();
             }
+            app.UseMvc ();
+            app.UseSwagger ();
 
+<<<<<<< HEAD
             app.UseSwagger ();
 
             app.UseSwaggerUI (c => {
@@ -56,6 +75,12 @@ namespace CursosProfissionalizantes {
 
             app.UseMvc ();
             
+=======
+            app.UseSwaggerUI (c => {
+                c.SwaggerEndpoint ("swagger/v1/swagger.json", "API V1");
+            });
+
+>>>>>>> 2826ba62a3c08709add3ca398bc2542103f44872
             app.Run (async (context) => {
                 await context.Response.WriteAsync ("Você saiu da rota");
             });

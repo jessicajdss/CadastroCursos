@@ -6,6 +6,7 @@
     <members>
         <member name="M:CadastroCursos.Controllers.CursoGeralController.Listar">
             <summary>
+<<<<<<< HEAD
               Retorna lista de Cursos Gerais 
             </summary>
             <returns>Cursos Gerais</returns>
@@ -37,6 +38,11 @@
             </remarks>
              <response code="200"> Retorna curso geral cadastrado </response>
             <response code="400"> Ocorreu um erro </response>
+=======
+            teste   
+            </summary>
+            <returns>teste</returns>
+>>>>>>> 2826ba62a3c08709add3ca398bc2542103f44872
         </member>
     </members>
 </doc>

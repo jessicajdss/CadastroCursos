@@ -18,11 +18,17 @@ namespace CadastroCursos.Controllers
         }
         
         /// <summary>
+<<<<<<< HEAD
         ///   Retorna lista de Cursos Gerais 
         /// </summary>
         /// <returns>Cursos Gerais</returns>
         /// <response code="200"> Retorna uma lista de cursos gerais </response>
         /// <response code="400"> Ocorreu um erro </response>
+=======
+        /// teste   
+        /// </summary>
+        /// <returns>teste</returns>
+>>>>>>> 2826ba62a3c08709add3ca398bc2542103f44872
         [HttpGet]
         [ProducesResponseType(typeof(List<CursoGeral>),200)]
         [ProducesResponseType(typeof(string),400)]
