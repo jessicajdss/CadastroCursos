@@ -17,17 +17,70 @@ namespace CadastroCursos.Controllers
             this.contexto = contexto;
         }
         
+        /// <summary>
+        ///   Retorna lista de Cursos Gerais 
+        /// </summary>
+        /// <returns>Cursos Gerais</returns>
+        /// <response code="200"> Retorna uma lista de cursos gerais </response>
+        /// <response code="400"> Ocorreu um erro </response>
         [HttpGet]
-        public IEnumerable<CursoGeral> Listar(){
-            return contexto.CursoGeral.ToList();           
+        [ProducesResponseType(typeof(List<CursoGeral>),200)]
+        [ProducesResponseType(typeof(string),400)]
+        public IActionResult Listar(){
+            try{
+                return Ok(contexto.CursoGeral.ToList());           
+            }
+            catch(System.Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
+        // public IEnumerable<CursoGeral> Listar(){
+        //     return contexto.CursoGeral.ToList();           
+        // }
 
+    /// <summary>
+    /// Busca um curso pelo seu ID
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns>Retorna um curso geral</returns>
+    /// <response code="200"> Retorna um curso geral </response>
+    /// <response code="400"> Ocorreu um erro </response>
+    /// <response code="404"> Curso Não Encontrado </response>
         [HttpGet("{id}")]
-        public CursoGeral Listar(int id){
-            return contexto.CursoGeral.Where(x=>x.IdCursoGeral==id).FirstOrDefault();
-        }
+        [ProducesResponseType(typeof(List<CursoGeral>),200)]
+        [ProducesResponseType(typeof(string),400)]
+        [ProducesResponseType(typeof(string),404)]
+        public IActionResult Listar(int id){
+            
+            try{
+                CursoGeral curso = contexto.CursoGeral.Where(x=>x.IdCursoGeral==id).FirstOrDefault();
 
+                if(curso == null){
+                    return NotFound("Curso Geral não encontrado");
+                }
+                return Ok (curso);
+            }
+            catch(System.Exception ex){
+                return BadRequest(ex.Message);
+            }
+        }
+    /// <summary>
+    /// Cadastra uma nova área
+    /// </summary>
+    /// <param name="cg"></param>
+    /// <remarks>
+    /// Modelo de dados que deve ser enviado para cadastrar a area request:
+    /// 
+    /// POST/CursoGeral:
+    ///     {
+    ///         "nome" :"nome do curso geral"     
+    ///     }
+    /// </remarks>
+    ///  <response code="200"> Retorna curso geral cadastrado </response>
+    /// <response code="400"> Ocorreu um erro </response>
         [HttpPost]
+        [ProducesResponseType(typeof(List<CursoGeral>),200)]
         public IActionResult Cadastrar([FromBody]CursoGeral cg){
             if(!ModelState.IsValid){
                 return BadRequest(ModelState);

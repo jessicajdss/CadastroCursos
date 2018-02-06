@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CursosProfissionalizantes</name>
+    </assembly>
+    <members>
+        <member name="M:CadastroCursos.Controllers.CursoGeralController.Listar">
+            <summary>
+              Retorna lista de Cursos Gerais 
+            </summary>
+            <returns>Cursos Gerais</returns>
+            <response code="200"> Retorna uma lista de cursos gerais </response>
+            <response code="400"> Ocorreu um erro </response>
+        </member>
+        <member name="M:CadastroCursos.Controllers.CursoGeralController.Listar(System.Int32)">
+            <summary>
+            Busca um curso pelo seu ID
+            </summary>
+            <param name="id"></param>
+            <returns>Retorna um curso geral</returns>
+            <response code="200"> Retorna um curso geral </response>
+            <response code="400"> Ocorreu um erro </response>
+            <response code="404"> Curso Não Encontrado </response>
+        </member>
+        <member name="M:CadastroCursos.Controllers.CursoGeralController.Cadastrar(CursosProfissionalizantes.Models.CursoGeral)">
+            <summary>
+            Cadastra uma nova área
+            </summary>
+            <param name="cg"></param>
+            <remarks>
+            Modelo de dados que deve ser enviado para cadastrar a area request:
+            
+            POST/CursoGeral:
+                {
+                "nome" :"nome do curso geral"     
+                }
+            </remarks>
+             <response code="200"> Retorna curso geral cadastrado </response>
+            <response code="400"> Ocorreu um erro </response>
+        </member>
+    </members>
+</doc>
